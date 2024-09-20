@@ -1,0 +1,95 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --primary: pink;
+  --dark: black;
+  --neonred: hsla(349, 100%, 60%, 1);
+  --neonrs: red;
+  --neongreen: green;
+  --neonblue: blue;
+  --neonyellow: 0 0 15px hsla(73, 100%, 54.1%, 0.5), 0 0 10px rgb(255, 251, 0),
+    0 0 45px rgb(255, 251, 0), 0 0 45px rgb(255, 251, 0);
+  --pinkshadow: 0 0 10px rgb(90, 33, 102), 0 0 10px rgb(250, 109, 226),
+    0 0 55px rgb(81, 48, 95), 0 0 55px pink;
+  --redshadow: 0 0 15px hsla(349, 78%, 60%, 0.5), 0 0 10px red, 0 0 45px red,
+    0 0 45px red;
+  --greenshadow: 0px 0px 15px hsla(115, 77%, 47%, 1), 0 0 55px green,
+    0 0 55px darkgreen, 0 0 55px darkgreen;
+  --greenneonoff: rgb(87, 116, 87);
+  --blueshadow: 0 0 10px hsla(238, 100%, 35%, 1), 0 0 10px blue, 0 0 45px blue,
+    0 0 45px blue;
+  --carrotshadow: 0 0 10px rgb(228, 159, 10), 0 0 10px rgb(255, 174, 0),
+    0 0 45px rgb(255, 153, 0), 0 0 45px rgb(255, 102, 0);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  width: 100svw;
+  height: 100svh;
+  background-image: url('/src/assets/blackwall.jpg');
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+input {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  box-shadow: var(--blueshadow);
+  background-color: transparent;
+  color: antiquewhite;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-top: 0.6rem;
+  color: #646cff;
+  box-shadow: var(--carrotshadow) inset;
+}
+
+button:hover {
+  border: 5px solid #646cff;
+}
+
+#app {
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  place-items: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
